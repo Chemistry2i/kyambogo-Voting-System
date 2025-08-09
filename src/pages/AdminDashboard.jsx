@@ -19,6 +19,8 @@ import Candidates from "../pages/Candidates"; // Import your Candidates page
 import Users from "../pages/Users"; // Import the Users page
 import Elections from "../pages/Elections"; // Import the Elections page
 import Logs from "../pages/Logs"; // Import the Logs page
+import Notifications from "../components/admin/Notifications"; // Import Notifications component  
+import Reports from "../components/admin/Reports";
 
 function AdminDashboard({ user, onLogout }) { // Add onLogout prop here
   const navigate = useNavigate();
@@ -220,7 +222,7 @@ function AdminDashboard({ user, onLogout }) { // Add onLogout prop here
                   }}
                   style={{ border: 'none', background: 'none' }}
                 >
-                  <FontAwesomeIcon icon={faBell} size="lg" className="text-muted" />
+                  <FontAwesomeIcon icon={faBell} size="lg" className="text-primary" />
                   {notifications.length > 0 && (
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                       {notifications.length}
@@ -294,6 +296,8 @@ function AdminDashboard({ user, onLogout }) { // Add onLogout prop here
               <Route path="candidates" element={<Candidates user={user} />} />
               <Route path="users" element={<Users user={user} />} />
               <Route path="logs" element={<Logs user={user} />} />
+              <Route path="notifications" element={<Notifications user={user} />} />
+              <Route path="reports" element={<Reports user={user} />} />
               {/* Add more admin routes here */}
             </Routes>
           </div>

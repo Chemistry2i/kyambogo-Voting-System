@@ -392,7 +392,7 @@ function Logs({ user }) {
         <div className="col-12">
           <div className="card border-0 shadow-sm mb-3" style={{ borderRadius: '15px' }}>
             <div className="card-body">
-              <div className="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-3">
+              <div className="d-flex justify-content-between align-items-center">
                 <div>
                   <h4 className="fw-bold text-primary mb-1 d-flex align-items-center">
                     <FontAwesomeIcon icon={faHistory} className="me-2" />
@@ -489,10 +489,10 @@ function Logs({ user }) {
               <FontAwesomeIcon icon={faInfoCircle} className="text-info me-3 mt-1" />
               <div>
                 <h6 className="fw-bold mb-2">About System Logs</h6>
-                <p className="mb-2">
+                <p className="mb-2 small">
                   <strong>Automatic Logs:</strong> Most actions (logins, votes, data changes) are logged automatically by the system.
                 </p>
-                <p className="mb-0">
+                <p className="mb-0 small">
                   <strong>Manual Admin Logs:</strong> Use "Add Admin Log" only for administrative actions like system maintenance, 
                   manual data corrections, security incidents, or configuration changes that need documentation.
                 </p>

@@ -88,3 +88,54 @@ td{
 .stat-card .card-body {
   padding: 0.5rem 0.5rem !important; /* Adjust as needed */
 }
+
+@media (min-width: 1200px) {
+  .col-xl-1-5 {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+}
+.analytics-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.analytics-card.hovered,
+.analytics-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+@media (min-width: 1200px) {
+  .col-xl-1-5 {
+    flex: 0 0 12.5% !important;
+    max-width: 12.5% !important;
+  }
+}
+/* For 8 cards per row on xl screens */
+@media (min-width: 1200px) {
+  .col-xl-1-5 {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+}
+
+/* Analytics card custom styles */
+.analytics-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  padding: 0rem !important; /* Card padding */
+}
+
+/* Card label font size */
+.analytics-card h6 {
+  font-size: .8em !important; /* Adjust as needed */
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Card value font size */
+.analytics-card h3 {
+  font-size: 1.5em !important; /* Adjust as needed */
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}

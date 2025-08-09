@@ -271,7 +271,7 @@ function StudentDashboard({ user }) {
       <div className="row g-2 g-md-3 mb-4">
         <div className="col-6 col-md-3 col-lg-3 col-xl-1-5">
           <div className="card border-0 shadow-sm h-100" style={{ borderRadius: '5px' }}>
-            <div className="card-body d-flex align-items-center p-2 p-md-3">
+            <div className="card-body d-flex align-items-center flex-column justify-content-center p-2 p-md-3">
               <div className="bg-primary bg-opacity-10 rounded-circle p-2 me-2">
                 <FaPoll className="text-primary" size={16} />
               </div>

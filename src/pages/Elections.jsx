@@ -359,7 +359,7 @@ function Elections({ user }) {
       </div>
       <div className="card-body text-center">
         <h5 className="fw-bold mb-0 fs-6">{stats.total}</h5>
-        <p className="text-muted mb-0 small" id="font">Total Elections</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Total Elections</p>
       </div>
     </div>
   </div>
@@ -373,7 +373,7 @@ function Elections({ user }) {
       </div>
       <div className="card-body text-center">
         <h5 className="fw-bold mb-0 fs-6">{stats.active}</h5>
-        <p className="text-muted mb-0 small" id="font">Active Elections</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Active Elections</p>
       </div>
     </div>
   </div>
@@ -387,7 +387,7 @@ function Elections({ user }) {
       </div>
       <div className="card-body text-center">
         <h5 className="fw-bold mb-0 fs-6">{stats.upcoming}</h5>
-        <p className="text-muted mb-0 small" id="font">Upcoming Elections</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Upcoming Elections</p>
       </div>
     </div>
   </div>
@@ -401,7 +401,7 @@ function Elections({ user }) {
       </div>
       <div className="card-body text-center">
         <h5 className="fw-bold mb-0 fs-6">{stats.completed}</h5>
-        <p className="text-muted mb-0 small" id="font">Complete Elections</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Complete Elections</p>
       </div>
     </div>
   </div>
@@ -415,7 +415,7 @@ function Elections({ user }) {
       </div>
       <div className="card-body text-center">
         <h5 className="fw-bold mb-0 fs-6">{stats.cancelled || 0}</h5>
-        <p className="text-muted mb-0 small" id="font">Cancelled Elections</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Cancelled Elections</p>
       </div>
     </div>
   </div>
@@ -431,7 +431,7 @@ function Elections({ user }) {
         <h5 className="fw-bold mb-0 fs-6">
           {elections.reduce((sum, e) => sum + (e.votesCount || 0), 0)}
         </h5>
-        <p className="text-muted mb-0 small" id="font">Total Votes Cast</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Total Votes Cast</p>
       </div>
     </div>
   </div>
@@ -447,7 +447,7 @@ function Elections({ user }) {
         <h5 className="fw-bold mb-0 fs-6">
           {elections.filter(e => e.status === "active").length}
         </h5>
-        <p className="text-muted mb-0 small" id="font">Ongoing Elections</p>
+        <p className="text-muted mb-0 small fw-bold" id="font">Ongoing Elections</p>
       </div>
     </div>
   </div>
@@ -463,7 +463,7 @@ function Elections({ user }) {
         <h5 className="fw-bold mb-0 fs-6">
           {elections.reduce((sum, e) => sum + (e.candidatesCount || 0), 0)}
         </h5>
-        <p className="text-muted mb-0 small fs-6" id="font">Total Candidates</p>
+        <p className="text-muted mb-0 small fs-6 fw-bold" id="font">Total Candidates</p>
       </div>
     </div>
   </div>
