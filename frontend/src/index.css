@@ -1,0 +1,52 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.register-container,
+ .form-control,
+.btn,
+.input-group-text,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
+
+.form-control, .input-group-text, label {
+  font-size: .9rem !important; /* Adjust this value as needed (e.g., 1rem, 1.2rem, 16px, etc.) */
+}
+
+/* Optionally, adjust button text size */
+.btn {
+  font-size: 1.1rem;
+}
+
+
+.badge-green {
+    background-color: #28a745 !important;
+    color: white !important;
+}
+
+td{
+  font-size: 14px !important;
+}
